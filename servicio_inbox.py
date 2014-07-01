@@ -10,6 +10,7 @@ app = Flask(__name__)
 
 #flag_json = 1 (json) = 0 (string)
 def predictInbox(email, flag_json):
+  print("\nVamos a predecir...")
   inboxClass = predictionInbox(email) 
 
   if flag_json:  #json
