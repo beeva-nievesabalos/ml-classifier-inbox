@@ -44,10 +44,10 @@ def predictionInbox(email):
     print(yprob)
     print("\nClass predicted:") 
     print(ypred[0])
-    array = [ypred[0],yprob[0],yprob[1],yprob[2]]
+    array = [ypred[0],yprob[0][1],yprob[0][1],yprob[0][2]]
     print("\na devolver:") 
     print(array)
-    return ypred[0]
+    return array
 
 #fichero = "../Output/Inbox/_50.txt"
 #prediccion = predictionInbox(fichero)
