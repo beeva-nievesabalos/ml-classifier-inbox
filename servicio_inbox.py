@@ -10,6 +10,7 @@ app = Flask(__name__)
 
 #flag_json = 1 (json) = 0 (string)
 def predictInbox(email, flag_json):
+  print("\npredictInbox!!")
   inboxClass = predictionInbox(email)
   #phonesstring = "[" + ''.join(phones[:-1]) + "]"
   #phonesarrayjson = ast.literal_eval(phonesstring)  
