@@ -12,7 +12,7 @@ model = joblib.load('models/inbox_model.txt')
 words = joblib.load('models/inbox_words.txt')
 
 def predictionInbox(email):
-    print("\n CONTENT: " + email)
+    #print("\n CONTENT: " + email)
     # Abro el fichero a voy a leer
     #f = open(email, 'r')
     # Matriz X
@@ -45,8 +45,6 @@ def predictionInbox(email):
     print("\nClass predicted:") 
     print(ypred[0])
     array = [ypred[0],yprob[0][1],yprob[0][1],yprob[0][2]]
-    print("\na devolver:") 
-    print(array)
     return array
 
 #fichero = "../Output/Inbox/_50.txt"
