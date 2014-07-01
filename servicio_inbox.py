@@ -4,7 +4,7 @@ Created on Thu May 29 15:33:24 2014
 
 @author: nieves
 """
-from inbox_classifier import predictionInbox
+from inbox_model import predictionInbox
 from flask import Flask, request, url_for, render_template, jsonify, Response
 app = Flask(__name__)
 
