@@ -44,7 +44,7 @@ def predictionInbox(email):
     print(yprob)
     print("\nClass predicted:") 
     print(ypred[0])
-    return [ypred[0],yprob]
+    return [ypred[0],yprob[0],yprob[1],yprob[2]]
 
 #fichero = "../Output/Inbox/_50.txt"
 #prediccion = predictionInbox(fichero)
