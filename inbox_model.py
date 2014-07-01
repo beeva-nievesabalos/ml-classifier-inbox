@@ -47,7 +47,7 @@ def predictionInbox(email):
     array = [ypred[0],yprob[0],yprob[1],yprob[2]]
     print("\na devolver:") 
     print(array)
-    return array
+    return ypred[0]
 
 #fichero = "../Output/Inbox/_50.txt"
 #prediccion = predictionInbox(fichero)
