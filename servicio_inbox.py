@@ -14,11 +14,11 @@ def predictInbox(email, flag_json):
   inboxClass = predictionInbox(email)
   #phonesstring = "[" + ''.join(phones[:-1]) + "]"
   #phonesarrayjson = ast.literal_eval(phonesstring)  
-
+  
   if flag_json:  #json
-    resultado = jsonify({'inbox_prediction': inboxClass})
+    resultado = jsonify({'inbox_prediction': inboxClass[0], 'prob_c0': inboxClass[1][0], 'prob_c1': inboxClass[1][1], 'prob_c2': inboxClass[1][2]})
   else: #string
-    resultado = json.dumps({'inbox_prediction': inboxClass})
+    resultado = json.dumps({'inbox_prediction': inboxClass[0], 'prob_c0': inboxClass[1][0], 'prob_c1': inboxClass[1][1], 'prob_c2': inboxClass[1][2]})
   
   return resultado
 
