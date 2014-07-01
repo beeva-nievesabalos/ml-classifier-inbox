@@ -29,7 +29,7 @@ def inbox():
     if request.headers['Content-Type'] == 'application/x-www-form-urlencoded':
       print("\n-------- request POST form['email'] -------")
       print(request.form['email'])
-      email = str(request.form['email'])
+      email = repr(request.form['email'])
       response = predictInbox(email, 1) # devuelve json
 
       #### para evitar CORS ######
